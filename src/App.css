@@ -1,38 +1,51 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border:  ridge 1px black;
+  width: 40rem;
+  margin-left: 30% ;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+body{
+  background: #7F7FD5;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addtask{
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
+.input{
+ border-top: none;
+}
+.task{
+  display: flex;
+  position: relative;
+  margin: 20px;
+}
+i{margin:0 10px}
+i:hover{color: #0F2027;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+ #disable{
+   text-decoration: line-through;
+ }
+ .select{
+   border-radius: 10px;
+   background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: none;
+ }
+
+

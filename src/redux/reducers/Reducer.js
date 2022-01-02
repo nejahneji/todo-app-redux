@@ -12,7 +12,7 @@ const Reducer = (state=initState,{type,payload}) => {
                )
            case DELETE_TASK:
                return (
-                   {...state,todoTask:state.todoTask.filter((el)=> el.id != payload)}
+                   {...state,todoTask:state.todoTask.filter((el)=> el.id !== payload)}
                )
                case COMPLETE_TASK:
                    return (
@@ -30,3 +30,5 @@ const Reducer = (state=initState,{type,payload}) => {
 }
 
 export default Reducer
+
+

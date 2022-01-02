@@ -11,12 +11,6 @@ function App() {
   const todos = useSelector((state) => state.todoTask);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-  useEffect(() => {
-    filteredHandler();
-  }, [todos, status]);
-  // console.log(filteredTodos)
-  console.log(status);
-
   const filteredHandler = () => {
     switch (status) {
       case "completed":
@@ -30,6 +24,13 @@ function App() {
         break;
     }
   };
+  useEffect(() => {
+    filteredHandler();
+  }, [todos, status]);
+  // console.log(filteredTodos)
+  console.log(status);
+
+  
   return (
     <div className="App">
       <AddTask />
